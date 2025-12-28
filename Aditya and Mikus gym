@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Advanced Website</title>
+  <meta name="description" content="Modern responsive website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary:#2563eb;
+      --gray-50:#f9fafb;
+      --gray-100:#f3f4f6;
+      --gray-600:#4b5563;
+      --gray-900:#111827;
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Arial,Helvetica,sans-serif;color:var(--gray-900);background:var(--gray-50)}
+    a{text-decoration:none;color:inherit}
+    header{position:sticky;top:0;z-index:20;background:white;border-bottom:1px solid var(--gray-100)}
+    .container{max-width:1100px;margin:0 auto;padding:16px}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .logo{font-weight:800;font-size:20px}
+    .menu{display:flex;gap:14px}
+    .btn{padding:10px 16px;border-radius:var(--radius);border:1px solid var(--primary);background:var(--primary);color:#fff;font-weight:600;box-shadow:0 10px 25px rgba(37,99,235,.15)}
+    .btn-outline{background:transparent;color:var(--primary)}
+    .hero{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center;padding:36px 16px}
+    .hero-card{background:white;border-radius:var(--radius);padding:26px;box-shadow:0 16px 40px rgba(0,0,0,.06)}
+    .section{padding:36px 16px}
+    .grid{display:grid;gap:18px}
+    .features{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .feature{background:white;border-radius:var(--radius);padding:18px;box-shadow:0 12px 28px rgba(0,0,0,.05)}
+    .cards{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+    .card{background:white;border-radius:var(--radius);padding:18px;box-shadow:0 10px 24px rgba(0,0,0,.05)}
+    footer{padding:36px 16px;background:white;border-top:1px solid var(--gray-100);margin-top:40px}
+    .contact-form{display:grid;gap:14px}
+    input,textarea{padding:12px;border-radius:12px;border:1px solid var(--gray-100);font:inherit}
+    .badge{display:inline-block;background:var(--gray-100);padding:4px 10px;border-radius:999px;color:var(--gray-600);font-size:12px}
+    @media (max-width:800px){
+      .hero{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">MySite</div>
+        <div class="menu">
+          <a href="#features">Features</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a class="btn btn-outline" href="#">Sign in</a>
+          <a class="btn" href="#">Get Started</a>
+        </div>
+      </nav>
+    </div>
+  </header>  <main>
+    <section class="hero container">
+      <div>
+        <span class="badge">New</span>
+        <h1 style="font-size:36px;line-height:1.1;margin:16px 0">Build a modern website — fast.</h1>
+        <p style="color:var(--gray-600);max-width:480px">
+          Ready-to-use layout, responsive design, smooth navigation, and a clean look. Customize the text, colors, and images to make it yours.
+        </p>
+        <div style="display:flex;gap:10px;margin-top:16px">
+          <a class="btn" href="#features">Explore Features</a>
+          <a class="btn btn-outline" href="#contact">Contact</a>
+        </div>
+      </div><div class="hero-card">
+    <h3>Smart Highlights</h3>
+    <ul style="padding-left:18px;line-height:1.7;color:var(--gray-600)">
+      <li>⚡ Fast & responsive</li>
+      <li>📱 Mobile-friendly layout</li>
+      <li>🎨 Easy to customize</li>
+      <li>🛡️ SEO & accessibility basics</li>
+    </ul>
+  </div>
+</section>
+
+<section id="features" class="section container">
+  <h2>Powerful features</h2>
+  <div class="grid features">
+    <div class="feature">
+      <h4>Responsive Design</h4>
+      <p>Looks great on mobile, tablet, and desktop without extra work.</p>
+    </div>
+    <div class="feature">
+      <h4>Sticky Navigation</h4>
+      <p>Header stays visible so visitors can move around easily.</p>
+    </div>
+    <div class="feature">
+      <h4>Reusable Components</h4>
+      <p>Cards, buttons, and sections you can copy anywhere.</p>
+    </div>
+    <div class="feature">
+      <h4>Contact Form</h4>
+      <p>Collect messages from visitors (
